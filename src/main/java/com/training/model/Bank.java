@@ -12,7 +12,7 @@ public class Bank {
         clients.add(client);
     }
 
-    private boolean clientExists(Client client) {
+    public boolean clientExists(Client client) {
         for(Client currentClient : clients) {
             if(currentClient.getName().equals(client.getName())) return true;
         }
