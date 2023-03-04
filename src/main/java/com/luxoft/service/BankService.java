@@ -1,8 +1,8 @@
-package com.training.service;
+package com.luxoft.service;
 
-import com.training.model.Bank;
-import com.training.model.Client;
-import com.training.model.ClientExistsException;
+import com.luxoft.model.Bank;
+import com.luxoft.model.Client;
+import com.luxoft.model.ClientExistsException;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class BankService {
 
-    private static Bank bank = new Bank();
+    private final static Bank bank = new Bank();
 
     public void loadFeed(String fileName) {
 

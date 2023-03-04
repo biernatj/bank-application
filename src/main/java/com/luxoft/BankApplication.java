@@ -1,6 +1,6 @@
-package com.training;
+package com.luxoft;
 
-import com.training.service.BankService;
+import com.luxoft.service.BankService;
 
 public class BankApplication {
     public static void main(String[] args) {

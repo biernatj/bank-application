@@ -1,4 +1,4 @@
-package com.training.model;
+package com.luxoft.model;
 
 public abstract class AbstractAccount implements Account {
 
@@ -43,12 +43,12 @@ public abstract class AbstractAccount implements Account {
     @Override
     public String toString() {
         StringBuilder accountString = new StringBuilder();
-        accountString.append("AbstractAccount{");
-        accountString.append("id=");
-        accountString.append(id);
-        accountString.append(", balance=");
-        accountString.append(balance);
-        accountString.append('}');
+        accountString.append("AbstractAccount{")
+                     .append("id=")
+                     .append(id)
+                     .append(", balance=")
+                     .append(balance)
+                     .append('}');
         return accountString.toString();
     }
 

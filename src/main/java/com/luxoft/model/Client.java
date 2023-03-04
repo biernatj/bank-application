@@ -1,9 +1,11 @@
-package com.training.model;
+package com.luxoft.model;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Client {
     private String name;
+    private String birthday;
 
     public String getName() {
         return name;
@@ -34,13 +36,13 @@ public class Client {
     @Override
     public String toString() {
         StringBuilder clientString = new StringBuilder();
-        clientString.append("Client{");
-        clientString.append("name='");
-        clientString.append(name);
-        clientString.append('\'');
-        clientString.append(", accounts=");
-        clientString.append(accounts.toString());
-        clientString.append('}');
+        clientString.append("Client{")
+                    .append("name='")
+                    .append(name)
+                    .append('\'')
+                    .append(", accounts=")
+                    .append(accounts.toString())
+                    .append('}');
         return clientString.toString();
     }
 
@@ -51,8 +53,8 @@ public class Client {
 
         Client client = (Client) o;
 
-        if (name != null ? !name.equals(client.name) : client.name != null) return false;
-        return accounts != null ? accounts.equals(client.accounts) : client.accounts == null;
+        return Objects.equals(name, client.name);
+
     }
 
     @Override

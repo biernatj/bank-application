@@ -1,4 +1,4 @@
-package com.training.model;
+package com.luxoft.model;
 
 public class NotEnoughFundsException extends BankException {
 

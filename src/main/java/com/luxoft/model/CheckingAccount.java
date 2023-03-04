@@ -1,4 +1,4 @@
-package com.training.model;
+package com.luxoft.model;
 
 public class CheckingAccount extends AbstractAccount {
 
@@ -35,16 +35,16 @@ public class CheckingAccount extends AbstractAccount {
     @Override
     public String toString() {
         StringBuilder checkingAccountString = new StringBuilder();
-        checkingAccountString.append("CheckingAccount{");
-        checkingAccountString.append(super.toString());
-        checkingAccountString.append("overdraft=");
-        checkingAccountString.append(overdraft);
-        checkingAccountString.append(", id=");
-        checkingAccountString.append(id);
-        checkingAccountString.append(", balance=");
-        checkingAccountString.append(balance);
-        checkingAccountString.append(super.toString());
-        checkingAccountString.append('}');
+        checkingAccountString.append("CheckingAccount{")
+                             .append(super.toString())
+                             .append("overdraft=")
+                             .append(overdraft)
+                             .append(", id=")
+                             .append(id)
+                             .append(", balance=")
+                             .append(balance)
+                             .append(super.toString())
+                             .append('}');
         return checkingAccountString.toString();
     }
 }
